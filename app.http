@@ -1,0 +1,35 @@
+GET http://localhost:3000/todos?priority=LOW&status=TO%20DO
+
+###
+
+GET http://localhost:3000/todos/
+
+###
+
+GET http://localhost:3000/todos/11/
+
+###
+POST http://localhost:3000/todos/
+
+Content-Type:application/json 
+
+
+{
+  "id": 11,
+  "todo": "Going To Running",
+  "priority": "High",
+  "status": "TO DO"
+}
+
+###
+PUT http://localhost:3000/todos/11/
+
+Content-Type:application/json 
+
+
+{
+  "todo":"Making Money"
+}
+
+###
+DELETE http://localhost:3000/todos/6/
